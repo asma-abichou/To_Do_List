@@ -1,22 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Fruit from "./fruits/fruit";
 import HelloWorld from "./helloWorld/HelloWorld";
 import TextField from "./forms/TextField";
 //import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const fruitsArray = ['Strawberry' , 'Lemon', 'Mango', 'Apple', 'Water Melon' ]
 root.render(
     <React.StrictMode>
-        <HelloWorld lastName='Assouma'/>
+        {/*<HelloWorld lastName='Assouma'/>
         <TextField inputName='firstName' label='First Name'/>
         <TextField inputName='lastName' label='Last Name'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </TextField>
+        </TextField>*/}
+        {
+            <Fruit fruits={fruitsArray}/>
+        }
     </React.StrictMode>
 );
 
