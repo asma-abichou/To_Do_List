@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Counter from './counter/Counter';
-import Fruit from "./fruits/fruit";
+import FruitList from "./fruits/FruitList";
 import HelloWorld from "./helloWorld/HelloWorld";
 import TextField from "./forms/TextField";
 import Event from "./Events/Event";
@@ -22,11 +22,11 @@ const fruitsArray = ['Strawberry' , 'Lemon', 'Mango', 'Apple', 'Water Melon' ]
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </TextField>*/
        /* {
-            <Fruit fruits={fruitsArray}/>
+            <FruitList fruits={fruitsArray}/>
         }*/
 
 root.render(
-    <Form />
+    <FruitList />
 
 );
 

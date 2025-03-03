@@ -23,7 +23,7 @@ export default function Form(){
                 <form>
                     <input type="text" id='name' onChange={handleInputNameChange} placeholder="Name"/>
                     <input type="text" id='age' onChange={handleInputAgeChange} placeholder="Age" />
-                    <input type="button" value ="submit" onClick={handleSubmit} />
+                    <input type="submit" value ="submit" onClick={handleSubmit} />
                 </form>
             </div>
 }
