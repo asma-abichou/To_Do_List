@@ -24,7 +24,10 @@ const fruitsArray = ['Strawberry' , 'Lemon', 'Mango', 'Apple', 'Water Melon' ]
             <Fruit fruits={fruitsArray}/>
         }*/
 
-root.render(<Event />);
+root.render(
+    <Counter />
+
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
