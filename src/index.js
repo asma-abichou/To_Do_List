@@ -6,6 +6,7 @@ import Fruit from "./fruits/fruit";
 import HelloWorld from "./helloWorld/HelloWorld";
 import TextField from "./forms/TextField";
 import Event from "./Events/Event";
+import Form from "./forms/Form";
 //import reportWebVitals from './reportWebVitals';
 
 
@@ -25,7 +26,7 @@ const fruitsArray = ['Strawberry' , 'Lemon', 'Mango', 'Apple', 'Water Melon' ]
         }*/
 
 root.render(
-    <Counter />
+    <Form />
 
 );
 

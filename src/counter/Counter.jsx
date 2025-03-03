@@ -15,8 +15,6 @@ export default class Counter extends Component {
         )
     }
 
-
-
     render(){
         return <>
             <button onClick={this.handleClick}>Click Here Increment !!!</button>
@@ -30,15 +28,16 @@ export default class Counter extends Component {
 
 import {useState} from "react";
 
-export default function Counter(){
- //Hook
-    const [count, setCount] = useState(5);
+export default function Counter({initialValue, step}){
+ //Hooks
+    //useState()
+    const [count, setCount] = useState(initialValue);
 
     return (<div>
                 <button onClick={()=> {
                     setCount(
                         prevState => {
-                            return prevState + 1 ;}
+                            return prevState + step ;}
                     )
                 }}>Click Here Increment !!!</button>
                 <button onClick={()=> {
